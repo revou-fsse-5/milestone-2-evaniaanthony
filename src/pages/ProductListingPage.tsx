@@ -11,7 +11,7 @@ const ProductListingPage: React.FC = () => {
   const [categories, setCategories] = useState<Category[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<number | undefined>(undefined);
   const [offset, setOffset] = useState<number>(0);
-  const [limit, setLimit] = useState<number>(10);
+  const [limit] = useState<number>(10);
   const [hasMore, setHasMore] = useState<boolean>(true);
   const [cart, setCart] = useState<Product[]>([]);
   const [notification, setNotification] = useState<string | null>(null);
