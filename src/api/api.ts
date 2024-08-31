@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Product, Category } from '../types/types';
+import { Product } from '../types/types';
 
 
 const API_BASE_URL = 'https://api.escuelajs.co/api/v1';
@@ -19,7 +19,7 @@ export const registerUser = async (userData: {
     return axios.post(`${API_BASE_URL}/users`, userData);
 };
 
-// Fetch users (for login validation, for example)
+// Fetch users 
 export const fetchUsers = async () => {
     return axios.get(`${API_BASE_URL}/users`);
 };

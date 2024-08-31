@@ -29,13 +29,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, onClick
                 />
                 <h2
                     className="text-xl font-semibold text-gray-800 mb-2"
-                    style={{ minHeight: '48px' }} // Fixed height for title
+                    style={{ minHeight: '48px' }} 
                 >
                     {product.title}
                 </h2>
                 <p
                     className="text-gray-600 text-sm mb-4"
-                    style={{ minHeight: '48px' }} // Fixed height for description
+                    style={{ minHeight: '48px' }}
                 >
                     {truncateDescription(product.description)}{' '}
                     <span

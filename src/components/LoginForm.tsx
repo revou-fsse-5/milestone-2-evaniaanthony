@@ -30,9 +30,8 @@ const LoginForm: React.FC<{ onSuccess: () => void }> = ({ onSuccess }) => {
                 return;
             }
 
-            // Assume the token is the user's ID for demonstration purposes
-            const token = user.id.toString(); // Replace this with your actual token
-            login(token, user.name); // Adjust as needed based on your auth context
+            const token = user.id.toString(); 
+            login(token, user.name); 
 
             onSuccess(); // Callback for successful login
         } catch (error) {
